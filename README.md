@@ -8,7 +8,7 @@ Then processing accepted models with custom fields in a generic fashion, using j
 
 ### Request Validation Example:
 
-When a request with media type of 'application/vnd.optimisticpanda.acme.product-v1+json' is made: 
+When a request with media type of `application/vnd.optimisticpanda.acme.product-v1+json` is made: 
 
 ```json
 [
@@ -34,7 +34,7 @@ When a request with media type of 'application/vnd.optimisticpanda.acme.product-
 ]
 ```
 
-But is processed with an incorrect media type of 'application/vnd.optimisticpanda.acme.product-v1+json' 
+But has been passed with an incorrect media type of `application/vnd.optimisticpanda.acme.product-v1+json` 
 It is verified under the following schema:
 
 ```json
