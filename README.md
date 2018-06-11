@@ -8,7 +8,8 @@ Then processing accepted models with custom fields in a generic fashion, using j
 
 ### Request Validation Example:
 
-When a request with media type of `application/vnd.optimisticpanda.acme.product-v1+json` is made: 
+Our client, "Fizzbuzz Incorporated" has been assigned a media type of `application/vnd.optimisticpanda.fizzbuzz.product-v1+json` and 
+usually sends payloads to our import endpoint in the following structure: 
 
 ```json
 [
@@ -34,8 +35,8 @@ When a request with media type of `application/vnd.optimisticpanda.acme.product-
 ]
 ```
 
-But has been passed with an incorrect media type of `application/vnd.optimisticpanda.acme.product-v1+json` 
-It is verified under the following schema:
+This time though it has sent us an order in the format of its arch rival, "Acme LTD" with a media type of `application/vnd.optimisticpanda.acme.product-v1+json` 
+This media type is verified under the following (incompatible) schema:
 
 ```json
 {
@@ -93,7 +94,7 @@ It is verified under the following schema:
 }
 ```
 
-This produces a validation 400 error with a response like: 
+This causes Fizzbuzz to fail to have their order validated with a 400 error response with the error payload: 
 
 ```json
 {
@@ -135,7 +136,7 @@ An Acme request like:
 
 ```
 
-Is processed into an internal canonical representation like:
+Is processed by our backend system into an internal canonical representation like:
 
 ```json
 {
@@ -233,4 +234,5 @@ is converted to a canoncial representation matching:
 
  * Json schema has suggestions of media type formats
  * Tidy up a bit
+ * Dynamic state validation
 
