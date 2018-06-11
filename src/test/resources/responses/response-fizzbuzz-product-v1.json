@@ -1,0 +1,27 @@
+{
+  "count": 1,
+  "records": [{
+    "id": "1111",
+    "name": "Turpentine",
+    "price": "12.23",
+    "tags": ["paint supplies"],
+    "dimensions": {
+      "length": 100,
+      "width": 30,
+      "extras": {
+        "weight": "10.1",
+        "height": "20"
+      }
+    },
+    "warehouseLocation": {
+      "extras": {
+        "latitude": "1.0",
+        "longitude": "2.0"
+      }
+    },
+    "extras": {
+      "origin": "Singapore",
+      "count": "100"
+    }
+  }]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "id" : 1111,
+    "name": "Hedge Cutters",
+    "price": 12.23,
+    "date_produced" : "2015-09-28T10:40:00+02:00",
+    "catalog_id" : "111",
+    "tags" : ["garden"],
+    "dimensions" : {
+      "length": 1000,
+      "width" :  12.21,
+      "height": 122
+    },
+    "warehouseLocation" : {
+      "latitude": 1.0,
+      "longitude" : 2.0
+    }
+  }
+]

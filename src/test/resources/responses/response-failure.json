@@ -1,0 +1,9 @@
+{
+  "errors": [
+    "#/0: 5 schema violations found",
+    "#/0: required key [date_produced] not found",
+    "#/0: required key [catalog_id] not found",
+    "#/0: extraneous key [origin] is not permitted",
+    "#/0: extraneous key [count] is not permitted",
+    "#/0/dimensions: extraneous key [weight] is not permitted"]
+}
