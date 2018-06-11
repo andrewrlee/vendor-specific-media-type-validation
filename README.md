@@ -9,6 +9,7 @@ Then processing accepted models with custom fields in a generic fashion, using j
 ### Request Validation Example:
 
 Our client, "Fizzbuzz Incorporated" has been assigned a media type of `application/vnd.optimisticpanda.fizzbuzz.product-v1+json`.
+
 It usually sends payloads to our import endpoint in the following structure: 
 
 ```json
@@ -36,6 +37,7 @@ It usually sends payloads to our import endpoint in the following structure:
 ```
 
 This time though it has sent us an order in the format of its arch rival, "Acme LTD" with a media type of `application/vnd.optimisticpanda.acme.product-v1+json` 
+
 This media type is verified under the following (incompatible) schema:
 
 ```json
@@ -234,5 +236,5 @@ is converted to a canoncial representation matching:
 
  * Json schema has suggestions of media type formats
  * Tidy up a bit
- * Dynamic state validation
+ * Dynamic state transition validation
 
