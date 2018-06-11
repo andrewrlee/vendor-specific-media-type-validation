@@ -1,15 +1,15 @@
 
 ## Dynamically validating requests with vendor specific media types
 
-Performing front end validation of requests based on a content type to json schema mapping.
+Performing up front validation of requests based on a content type to json schema mapping.
 
 Then processing accepted models with custom fields in a generic fashion, using jackson's `@JsonAnySetter`.  
 
 
 ### Request Validation Example:
 
-Our client, "Fizzbuzz Incorporated" has been assigned a media type of `application/vnd.optimisticpanda.fizzbuzz.product-v1+json` and 
-usually sends payloads to our import endpoint in the following structure: 
+Our client, "Fizzbuzz Incorporated" has been assigned a media type of `application/vnd.optimisticpanda.fizzbuzz.product-v1+json`.
+It usually sends payloads to our import endpoint in the following structure: 
 
 ```json
 [
